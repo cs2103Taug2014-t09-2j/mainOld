@@ -1,5 +1,10 @@
 /* Test edit Ngoc Anh
+<<<<<<< HEAD
 /* Test tEst STET Anotny
+=======
+//this is rubbish
+/*
+>>>>>>> origin/master
  * ==============NOTE TO STUDENTS======================================
  * This class is not written in pure Object-Oriented fashion. That is 
  * because we haven't covered OO theory yet. Yes, it is possible to 
