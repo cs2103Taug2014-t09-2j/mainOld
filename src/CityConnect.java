@@ -1,4 +1,5 @@
 /* Test edit Ngoc Anh
+//this is rubbish
 /*
  * ==============NOTE TO STUDENTS======================================
  * This class is not written in pure Object-Oriented fashion. That is 
