@@ -17,7 +17,7 @@ import java.util.logging.Logger;
 public class draft1 extends javax.swing.JFrame {
     private final String fileName = "test.txt";
     private BufferedWriter bw;
-    private String file_object;
+
 
     /**
      * Creates new form draft1
@@ -281,17 +281,17 @@ public class draft1 extends javax.swing.JFrame {
                 writeToFile(currDateTask,fileName);
                 
                 //then display in the UI
+                displayPost1();
                 
         
     }
 
     private void writeToFile(ArrayList<String> currDateTask, String fileName) throws IOException {
         try {
-            bw = new BufferedWriter(new FileWriter(file_object, true));
+            bw = new BufferedWriter(new FileWriter(new File("C:/Users/MadeRaditya/Documents/NetBeansProjects/GUI draft 1/test.txt"), true));
             for (int i = 0; i < currDateTask.size(); i++) {
-                String line = new String();
-                line = currDateTask.get(i);
-                bw.write(line + "\n");
+            
+                bw.write(currDateTask.get(i) + "\n");
             }
 
 		} catch (IOException ee) {
@@ -300,6 +300,7 @@ public class draft1 extends javax.swing.JFrame {
 			//close the writer so that it can write to the file
             bw.close(); 
         }
+        System.out.println("DONE!");
     }
 
     private void clearFile(String fileName) {
